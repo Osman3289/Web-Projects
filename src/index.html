@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth font-poppins">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn guitar with StringMaster - interactive lessons, visual fretboard trainer, and AI-powered chord recognition." />
+    <title>StringMaster</title>
+    <link href="/public/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      
+  </head>
+  <body>
+    <!-- ========== Start Section ========== -->
+    
+    <header id="header" class="flex justify-between items-center px-6 md:px-15 lg:px-25 py-4 bg-[#0d0d0d] ">
+      <div class="flex items-center justify-center gap-2">
+        <div class="primary-color p-1 rounded-sm">
+          <i class="fa-solid fa-music text-black"></i>
+        </div>
+        <div>
+          <span class="text-2xl text-white font-semibold">StringMaster</span>
+        </div>
+      </div>
+      
+      <div>
+        <nav id="navbar" class="absolute lg:static -top-100 bg-[#0d0d0d] w-full lg:w-fit h-100 lg:h-auto left-0 transition-all duration-500 ease-in-out">
+          <div>
+            <ul class="flex py-6 md:px-15 lg:py-0 px-8 lg:px-0 items-start lg:items-center flex-col lg:flex-row gap-10 lg:gap-8 justify-center text-gray-400 font-medium">
+            <li><a class="nav-link hover:text-[#f59f0a] transition-all duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:border-b-2 after:w-0 after:transition-all after:duration-300 hover:after:w-full" href="#features">Features</a></li>
+            <li><a class="hover:text-[#f59f0a] transition-all duration-300  relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:border-b-2 after:w-0 after:transition-all after:duration-300 hover:after:w-full" href="#pricing">Pricing</a></li>
+            <li><a class="hover:text-[#f59f0a] transition-all duration-300  relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:border-b-2 after:w-0 after:transition-all after:duration-300 hover:after:w-full" href="#instructors">Instructors</a></li>
+            <li><a class="hover:text-[#f59f0a] transition-all duration-300  relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:border-b-2 after:w-0 after:transition-all after:duration-300 hover:after:w-full" href="#testimonial">Reviews</a></li>
+            <li><a class="hover:text-[#f59f0a] transition-all duration-300  relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:border-b-2 after:w-0 after:transition-all after:duration-300 hover:after:w-full" href="#contact">Contact</a></li>
+          </ul>  
+        </div>
+        <div class="primary-color mx-8 lg:hidden py-3 px-5 rounded-lg text-center cursor-pointer hover:-translate-y-2 transition-all duration-300" >
+      <button><a href="#" class="font-semibold ">Start Free Trial</a></button></div>        
+        </nav>
+      </div>
+
+      <div class="primary-color py-3 px-5 rounded-lg hidden lg:inline-block cursor-pointer hover:bg-yellow-500 hover:-translate-y-1 transition-all duration-200 linear " >
+        <a href="#" class="font-semibold">Start Free Trial</a>
+      </div>
+
+      <div class="lg:hidden ">
+        <div>
+          <button class="btn-bars"><i class="fa-solid fa-bars cursor-pointer text-white"></i></button>
+           <button class="hidden btn-x"><i class="fa-solid fa-x text-white cursor-pointer"></i></button>
+        </div>
+    
+      </div>
+
+    </header>
+    <!-- ========== End Section ========== -->
+
+    <!-- ========== Start Section ========== -->
+    <section class="min-h-screen w-full bg-black px-6 md:px-15 lg:px-25 py-4">
+      <div class="grid grid-cols-1 lg:grid-cols-[60%_40%]">
+        <div class="py-8">
+          <div class="flex gap-2 items-center justify-center w-fit m-auto lg:m-0 bg-[#1a1a1a] px-4 py-2 rounded-full ">
+            <div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+            <div>
+              <p class="text-gray-400 text-[14px]">New: AI-powered chord recognition</p>
+            </div>
+          </div>
+
+          <div>
+            <h1 class="text-white py-8 text-3xl md:text-5xl lg:text-7xl font-bold tracking-tight text-center lg:text-start">Master guitar with <span class="text-[#f59f0a]">interactive</span> lessons</h1>
+            <p class="text-gray-400 text-[16px] md:text-[18px] leading-normal text-center md:15 lg:text-start ">Learn at your own pace with our visual fretboard trainer. From beginner chords to advanced techniques — all in one platform.</p>
+            <div class="md:flex md:items-center gap-10 py-8">
+              <button class="primary-color text-[15px] font-semibold lg:w-60 w-full py-3 rounded-lg text-center hover:bg-yellow-500 hover:shadow-lg hover:shadow-yellow-500/50 hover:-translate-y-2 cursor-pointer transition-all duration-200 linear mt-8">Start Learning</button>
+            <button class="w-full font-semibold lg:w-60 text-white py-3 rounded-lg text-[15px] text-center border border-gray-600 cursor-pointer mt-8">See How It Works</button>
+            </div>
+
+            <div class="flex text-white justify-center lg:justify-start gap-10 py-4">
+              <div>
+                <div><span class="text-xl lg:text-4xl font-bold">50K+</span></div>
+                <div><span class="text-gray-400 text-[13px]">Active Students</span></div>
+              </div>
+              <div>
+                <div><span class="text-xl lg:text-4xl font-bold">200+</span></div>
+                <div><span class="text-gray-400 text-[13px]">Video Lessons</span></div>
+              </div>
+              <div>
+                <div><span class="text-xl lg:text-4xl font-bold">4.9</span></div>
+                <div><span class="text-gray-400 text-[13px]">App Rating</span></div>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+        <div class="lg:relative flex justify-center items-center">
+          <img class="z-9 lg:absolute w-[80%] object-cover" src="/assets/guitar-music-entertainment-png-images-10.webp" alt="guitar img">
+          <div class="w-60 h-60 absolute bg-yellow-500 rounded-full blur-3xl flex items-center justify-center"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Section ========== -->
+    <!-- ========== Start Section ========== -->
+    <section id="features" class="bg-[#1a1a1a] min-h-screen">
+      <div class="py-25 text-center px-10">
+        <h3 class="text-[#f59f0a] text-[16px] md:text-[18px] font-normal">Features</h3>
+        <h2 class="text-white text-3xl md:text-5xl lg:text-5xl font-bold py-8 leading-12">Everything you need to learn guitar</h2>
+        <p class="text-gray-400 text-[17px] md:w-[50%] mx-auto">Our platform combines visual learning with hands-on practice to accelerate your guitar journey.</p>
+      </div>
+      <div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6 md:px-15 lg:px-25 pb-20">
+          <!-- Card 1 -->
+          <div class="bg-black px-6 py-6 rounded-lg border hover:shadow-lg hover:shadow-yellow-500/50 transition-all duration-300 hover:-translate-y-2 group">
+            <div class="text-yellow-500 text-4xl mb-4">
+              <i class="fa-solid fa-chalkboard-user group-hover:text-red-700 transition-all duration-300 linear"></i>
+            </div>
+            <h3 class="text-white text-2xl font-semibold mb-2">Interactive Fretboard</h3>
+            <p class="text-gray-400">Visualize chords and scales on a dynamic fretboard that responds to your playing.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-black p-6 rounded-lg border hover:shadow-lg hover:shadow-yellow-500/50 transition-all duration-300 hover:-translate-y-2 group">
+            <div class="text-yellow-500 text-4xl mb-4">
+              <i class="fa-solid fa-video group-hover:text-red-700 transition-all duration-300 linear"></i>
+            </div>
+            <h3 class="text-white text-2xl font-semibold mb-2">Video Lessons</h3>
+            <p class="text-gray-400">Access hundreds of high-quality video lessons taught by expert instructors.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-black p-6 rounded-lg border hover:shadow-lg hover:shadow-yellow-500/50 transition-all duration-300 hover:-translate-y-2 group">
+            <div class="text-yellow-500 text-4xl mb-4">
+              <i class="fa-solid fa-music group-hover:text-red-700 transition-all duration-300 linear"></i>
+            </div>
+            <h3 class="text-white text-2xl font-semibold mb-2">AI Chord Recognition</h3>
+            <p class="text-gray-400">Get instant feedback on your playing with our AI-powered chord recognition technology.</p>
+          </div>
+          <!-- Card 1 -->
+          <div class="bg-black p-6 rounded-lg border hover:shadow-lg hover:shadow-yellow-500/50 transition-all duration-300 hover:-translate-y-2 group">
+            <div class="text-yellow-500 text-4xl mb-4">
+              <i class="fa-solid fa-chalkboard-user group-hover:text-red-700 transition-all duration-300 linear"></i>
+            </div>
+            <h3 class="text-white text-2xl font-semibold mb-2">Interactive Fretboard</h3>
+            <p class="text-gray-400">Visualize chords and scales on a dynamic fretboard that responds to your playing.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-black p-6 rounded-lg border hover:shadow-lg hover:shadow-yellow-500/50 transition-all duration-300 hover:-translate-y-2 group">
+            <div class="text-yellow-500 text-4xl mb-4">
+              <i class="fa-solid fa-video group-hover:text-red-700 transition-all duration-300 linear"></i>
+            </div>
+            <h3 class="text-white text-2xl font-semibold mb-2">Video Lessons</h3>
+            <p class="text-gray-400">Access hundreds of high-quality video lessons taught by expert instructors.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-black p-6 rounded-lg border hover:shadow-lg hover:shadow-yellow-500/50 transition-all duration-300 hover:-translate-y-2 group">
+            <div class="text-yellow-500 text-4xl mb-4">
+              <i class="fa-solid fa-music group-hover:text-red-700 transition-all duration-300 linear"></i>
+            </div>
+            <h3 class="text-white text-2xl font-semibold mb-2">AI Chord Recognition</h3>
+            <p class="text-gray-400">Get instant feedback on your playing with our AI-powered chord recognition technology.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Section ========== -->
+    <!-- ========== Start Section ========== -->
+    <section id="pricing" class="bg-black pb-20">
+      <div class="py-25 text-center ">
+        <h3 class="text-[#f59f0a] text-[16px] md:text-[18px] font-normal">Pricing</h3>
+        <h2 class="text-white text-3xl px-4 md:text-5xl lg:text-5xl font-bold py-5 leading-12">Simple, transparent pricing</h2>
+        <p class="text-gray-400 text-[17px] md:w-[50%] mx-auto">Start with a free trial. No credit card required.</p>
+      </div>
+
+      <!-- Toggle -->
+  <div class="flex justify-center mb-14">
+    <div class="bg-zinc-900 p-1 rounded-full flex gap-1">
+      <button id="monthlyBtn" class="px-6 py-2 rounded-full bg-[#f59f0a] text-gray-400 font-semibold">Monthly</button>
+      <button id="yearlyBtn" class="px-6 py-2 rounded-full text-gray-300">Yearly</button>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="lg:max-w-6xl md:max-w-2xl max-w-2xl lg:px-4 px-15 mx-auto grid gap-10 md:grid-cols-1 lg:grid-cols-3">
+
+    <!-- Basic -->
+    <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:shadow-[0_0_30px_#f59f0a] transition">
+      <h3 class="text-xl text-gray-400 font-semibold mb-4">Basic</h3>
+      <p class="text-4xl text-white font-bold mb-6">
+        $<span class="price" data-month="9" data-year="90">9</span>
+        <span class="text-lg">/mo</span>
+      </p>
+
+      <ul class="space-y-3 text-gray-400 mb-8">
+        <li>✔ 1 Website</li>
+        <li>✔ 10 GB Storage</li>
+        <li>✔ Email Support</li>
+      </ul>
+
+      <button class="w-full py-3 bg-black text-white rounded-xl font-semibold hover:bg-gray-200 hover:text-black transition">
+        Get Started
+      </button>
+    </div>
+
+    <!-- Pro -->
+    <div class="bg-zinc-900 p-8 rounded-2xl border-2 border-[#f59f0a] scale-105 shadow-[0_0_30px_#f59f0a]">
+      <span class="text-sm bg-[#f59f0a] text-black px-3 py-1 rounded-full mb-4 inline-block">
+        Most Popular
+      </span>
+
+      <h3 class="text-xl text-gray-400 font-semibold mb-4">Pro</h3>
+      <p class="text-4xl text-white font-bold mb-6">
+        $<span class="price" data-month="29" data-year="290">29</span>
+        <span class="text-lg">/mo</span>
+      </p>
+
+      <ul class="space-y-3 text-gray-400 mb-8">
+        <li>✔ 10 Websites</li>
+        <li>✔ 100 GB Storage</li>
+        <li>✔ Priority Support</li>
+      </ul>
+
+      <button class="w-full py-3 bg-[#f59f0a] text-black rounded-xl font-semibold hover:-translate-y-2 hover:bg-yellow-600 transition">
+        Choose Plan
+      </button>
+    </div>
+
+    <!-- Premium -->
+    <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:shadow-[0_0_30px_#f59f0a] transition">
+      <h3 class="text-xl text-gray-400 font-semibold mb-4">Premium</h3>
+      <p class="text-4xl text-white font-bold mb-6">
+        $<span class="price" data-month="59" data-year="590">59</span>
+        <span class="text-lg">/mo</span>
+      </p>
+
+      <ul class="space-y-3 text-gray-400 mb-8">
+        <li>✔ Unlimited Websites</li>
+        <li>✔ 1 TB Storage</li>
+        <li>✔ 24/7 Support</li>
+      </ul>
+
+      <button class="w-full py-3 bg-black text-white rounded-xl font-semibold hover:bg-gray-200 hover:text-black transition">
+        Go Premium
+      </button>
+    </div>
+
+
+    </section>
+    <!-- ========== End Section ========== -->
+    <!-- ========== Start Section ========== -->
+    <section id="instructors" class="bg-[#1a1a1a] min-h-screen">
+      <div class="py-25 text-center px-10">
+        <h3 class="text-[#f59f0a] text-[16px] md:text-[18px] font-normal">INSTRUCTORS</h3>
+        <h2 class="text-white text-3xl md:text-5xl lg:text-5xl font-bold py-4 leading-12">Learn from the best</h2>
+        <p class="text-gray-400 text-[17px] md:w-[50%] mx-auto">Our instructors have decades of combined experience and a passion for teaching.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Instructor 1 -->
+        <div class="flex flex-col items-center p-6">
+          <i class="fa-solid fa-circle-user text-[#f59f0a] text-6xl"></i>
+          <h3 class="text-white text-xl pt-2 pb-4 font-semibold mb-2">Alex Johnson</h3>
+          <p class="text-gray-400">Lead Guitar Instructor</p>
+      </div>
+        <!-- Instructor 1 -->
+        <div class="flex flex-col items-center p-6">
+          <i class="fa-solid fa-circle-user text-[#f59f0a] text-6xl"></i>
+          <h3 class="text-white text-xl pt-2 pb-4 font-semibold mb-2">Alex Johnson</h3>
+          <p class="text-gray-400">Lead Guitar Instructor</p>
+      </div>
+        <!-- Instructor 1 -->
+        <div class="flex flex-col items-center p-6">
+          <i class="fa-solid fa-circle-user text-[#f59f0a] text-6xl"></i>
+          <h3 class="text-white text-xl pt-2 pb-4 font-semibold mb-2">Alex Johnson</h3>
+          <p class="text-gray-400">Lead Guitar Instructor</p>
+      </div>
+        <!-- Instructor 1 -->
+        <div class="flex flex-col items-center p-6">
+          <i class="fa-solid fa-circle-user text-[#f59f0a] text-6xl"></i>
+          <h3 class="text-white text-xl pt-2 pb-4 font-semibold mb-2">Alex Johnson</h3>
+          <p class="text-gray-400">Lead Guitar Instructor</p>
+      </div>
+    </section>
+    <!-- ========== End Section ========== -->
+    <!-- ========== Start Section ========== -->
+    <section id="testimonial" class="bg-black py-16 px-6">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Section Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+      What Our <span class="text-yellow-400">Clients Say</span>
+    </h2>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-[#0f0f0f] border border-yellow-400/30 rounded-xl p-6 hover:scale-105 transition duration-300">
+        <div class="flex text-yellow-400 mb-4">
+          ★★★★★
+        </div>
+        <p class="text-gray-300 mb-6">
+          This service exceeded my expectations. The design is clean, fast,
+          and perfectly responsive on all devices.
+        </p>
+        <div>
+          <h4 class="text-lg font-semibold text-yellow-400">Ali Khan</h4>
+          <span class="text-sm text-gray-400">Web Developer</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#0f0f0f] border border-yellow-400/30 rounded-xl p-6 hover:scale-105 transition duration-300">
+        <div class="flex text-yellow-400 mb-4">
+          ★★★★★
+        </div>
+        <p class="text-gray-300 mb-6">
+          Amazing experience! Everything was smooth and professional.
+          Highly recommended for modern UI projects.
+        </p>
+        <div>
+          <h4 class="text-lg font-semibold text-yellow-400">Sara Ahmed</h4>
+          <span class="text-sm text-gray-400">UI/UX Designer</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#0f0f0f] border border-yellow-400/30 rounded-xl p-6 hover:scale-105 transition duration-300">
+        <div class="flex text-yellow-400 mb-4">
+          ★★★★★
+        </div>
+        <p class="text-gray-300 mb-6">
+          Top-notch quality and attention to detail. The layout feels premium
+          and works flawlessly.
+        </p>
+        <div>
+          <h4 class="text-lg font-semibold text-yellow-400">Usman Raza</h4>
+          <span class="text-sm text-gray-400">Startup Founder</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ========== End Section ========== -->
+    <!-- ========== Start Section ========== -->
+    <section id="contact" class="bg-[#0f0f0f] py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+      Get In <span class="text-yellow-400">Touch</span>
+    </h2>
+
+    <!-- Content -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      <!-- Left Info -->
+      <div class="text-white space-y-6">
+        <h3 class="text-2xl font-semibold">
+          Let’s build something <span class="text-yellow-400">great</span> together
+        </h3>
+        <p class="text-gray-400">
+          Have a project in mind or need help with design and development?
+          Feel free to reach out — I’d love to hear from you.
+        </p>
+
+        <div class="space-y-4">
+          <p class="flex items-center gap-3">
+            <span class="text-yellow-400">📧</span>
+            contact@example.com
+          </p>
+          <p class="flex items-center gap-3">
+            <span class="text-yellow-400">📞</span>
+            +92 300 1234567
+          </p>
+          <p class="flex items-center gap-3">
+            <span class="text-yellow-400">📍</span>
+            Pakistan
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="bg-[#0f0f0f] p-8 rounded-xl border border-yellow-400/30 space-y-6">
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-400"
+        />
+
+        <input
+          type="email"
+          placeholder="Your Email"
+          class="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-400"
+        />
+
+        <textarea
+          rows="4"
+          placeholder="Your Message"
+          class="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-400"
+        ></textarea>
+
+        <button
+          class="w-full bg-yellow-400 text-black font-semibold py-3 rounded-lg hover:-translate-y-2 hover:bg-yellow-500 transition"
+        >
+          Send Message
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ========== End Section ========== -->
+    <!-- ========== Start Section ========== -->
+    <footer class="bg-[#0b0b0b] border-t border-yellow-400/20">
+  <div class="max-w-7xl mx-auto px-6 py-10">
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+      <!-- Logo / Name -->
+      <h3 class="text-2xl font-bold text-white">
+        String<span class="text-yellow-400">Master</span>
+      </h3>
+
+      <!-- Links -->
+      <ul class="flex gap-6 text-gray-400">
+        <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">About</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Services</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Contact</a></li>
+      </ul>
+
+      <!-- Social -->
+      <div class="flex gap-4 text-yellow-400 text-xl">
+        <a href="#" class="hover:text-yellow-300 transition">🐦</a>
+        <a href="#" class="hover:text-yellow-300 transition">💼</a>
+        <a href="#" class="hover:text-yellow-300 transition">📸</a>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="text-center text-gray-500 text-sm mt-8">
+      © 2026 RedDavil. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+    <!-- ========== End Section ========== -->
+    
+
+    <script>
+      let navbar = document.querySelector("#navbar");
+      let btnBars = document.querySelector(".btn-bars");
+      let btnX = document.querySelector(".btn-x");
+      let header = document.querySelector("#header");
+
+
+      btnBars.addEventListener("click", () =>{
+        navbar.classList.toggle("top-16");
+        btnBars.classList.toggle("hidden");
+        btnX.classList.toggle("hidden");
+      });
+      btnX.addEventListener("click", () =>{
+        navbar.classList.toggle("top-16");
+        btnBars.classList.toggle("hidden");
+        btnX.classList.toggle("hidden");
+      });
+
+      window.addEventListener("scroll", () =>{
+        if(window.scrollY > 50){
+          header.classList.add(
+            "fixed",
+        "top-0",
+        "left-0",
+        "w-full",
+        "z-50",
+        "shadow-lg",
+        "backdrop-blur-md"
+          );
+        }else{
+          header.classList.remove(
+            "fixed",
+        "top-0",
+        "left-0",
+        "w-full",
+        "z-50",
+        "shadow-lg",
+        "backdrop-blur-md"
+          );
+        }
+      });
+      const monthlyBtn = document.getElementById("monthlyBtn");
+  const yearlyBtn = document.getElementById("yearlyBtn");
+  const prices = document.querySelectorAll(".price");
+
+  monthlyBtn.onclick = () => {
+    prices.forEach(p => p.textContent = p.dataset.month);
+    monthlyBtn.classList.add("bg-[#f59f0a]","text-white");
+    yearlyBtn.classList.remove("bg-[#f59f0a]","text-black");
+  };
+
+  yearlyBtn.onclick = () => {
+    prices.forEach(p => p.textContent = p.dataset.year);
+    yearlyBtn.classList.add("bg-[#f59f0a]","text-white");
+    monthlyBtn.classList.remove("bg-[#f59f0a]","text-black");
+  };
+
+   
+   </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>

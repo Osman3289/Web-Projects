@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer components{
+    .primary-color{
+        @apply bg-[#f59f0a];
+    }
+    .font-poppins{
+        font-family: 'Poppins', sans-serif;
+    }
+}
